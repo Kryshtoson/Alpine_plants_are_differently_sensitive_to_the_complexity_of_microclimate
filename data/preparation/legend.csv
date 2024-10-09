@@ -1,0 +1,24 @@
+variable,label_variable
+avg_1_mean,Daily Mean T
+avg_4_min,Daily Min T
+avg_5_max,Daily Max T
+avg_3_range,Daily Range T
+avg_2_sd,Daily SD T
+exe_2_min,Min T
+exe_1_max,Max T
+hct_1_above0C,# hours with T >0C
+hct_2_above2C,# hours with T >2C
+hct_3_above5C,# hours with T >5C
+hct_4_above10C,# hours with T >10C
+dct_1_above0C,# days with T >0C
+dct_2_above2C,# days with T >2C
+dct_3_above5C,# days with T >5C
+dct_4_above10C,# days with T >10C
+cms_1_above0C,GDH >0C
+cms_2_above2C,GDH >2C
+cms_3_above5C,GDH >5C
+cms_4_above10C,GDH >10C
+gdd_1_above0C,GDD T >0C
+gdd_2_above2C,GDD T >2C
+gdd_3_above5C,GDD T >5C
+gdd_4_above10C,GDD T >10C
