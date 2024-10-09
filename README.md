@@ -1,5 +1,8 @@
 # Alpine plants are differently sensitive to the complexity of microclimate
 
+Code associated with a paper submitted to Ecology by Chytrý, K. et al. 
+
+
 ## Script S1:
 * Calculation of temperature variables and correlations between the first year of data and the second year of data
 * Please note that raw soil temperature data are not provided in this repository. We only provide temperature measurements for two sites here to make the script run. For the full dataset either query SoilTemp database (https://www.soiltempproject.com/) or contact authors (Kryštof Chytrý: krystof.chytry@gmail.com, https://www.mountainresearch.at/microclim/).
