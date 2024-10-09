@@ -22,7 +22,6 @@ colours <- c('1: spring' = '#adbc40',
              '5: range' = '#ff004d')
 spe_wide <- read_csv('data\\temperature_models\\spe_wide.csv')
 all_mic <- read_csv('data\\temperature_models\\temperature_variables.csv')
-growthform <- read_csv('data/sp_growth-form.csv')
 legend <- read_csv('data/preparation/legend.csv')
 all_mic_sc <- read_csv('data/temperature_models/temperature_variables_scaled.csv') |>
   select_if(~any(length(unique(.)) > 5)) |>
@@ -31,8 +30,9 @@ all_mic_sc <- read_csv('data/temperature_models/temperature_variables_scaled.csv
   column_to_rownames('name')
 step <- read_csv('data/temperature_models/SPECIES_temperature_models.csv')
 groups <- read_csv('data/temperature_models/var_groups.csv')
+
 #' -------------------------------------------------------------------------
-#' modelling
+#' Modelling
 #' -------------------------------------------------------------------------
 tic()
 spe_wide |>

@@ -11,7 +11,7 @@ library(tidyverse)
 #' 2: out of the daily values, the basis for the pulse events is derived (daily_extremes)
 #' 3: statistics per different time frames (monthly, seasonal and annual) are calculated using a map loop
 #' -------------------------------------------------------------------------
-loggers <- read_csv('data/preparation/logger_data.csv') |>
+loggers <- read_csv('data/logger_data.csv') |>
   mutate(day = as.Date(date),
          month = month(date)) |>
   rename(temp = temperature)
@@ -104,10 +104,12 @@ consider_these <- mic |>
   filter(value < nrow(mic) * .333) |>
   pull(name)
 
-mic |>
-  select(all_of(consider_these)) |>
-  write_csv('data\\temperature_models\\temperature_variables.csv')
+#' temperature variables analysed in the paper
+# mic |>
+#   select(all_of(consider_these)) |>
+#   write_csv('data\\temperature_models\\temperature_variables.csv')
 
+#' scaled temperature variables analysed in the paper
 all_mic_new <- read_csv('data\\temperature_models\\temperature_variables.csv')
 all_mic_new[-1] <- scale(all_mic_new[-1])
 all_mic_new <- all_mic_new |> mutate_all(~replace_na(.x, 0))
